@@ -7,4 +7,15 @@ function getAbsSum(arr) {
   return sum;
 }
 
-module.exports = getAbsSum;
+function getAbsSum2(arr){
+  let sum = 0;
+  arr.forEach((elem) => {
+    sum += elem
+  })
+  return sum;
+}
+
+module.exports = {
+  getAbsSum,
+  getAbsSum2
+}
